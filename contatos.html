@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    <title> Cursos Virtuais </title>
-    <link rel="stylesheet" href="css/site.style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o projeto Cursos Virtuais.">
+  <title>Contato | Cursos Virtuais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="script.js" defer></script>
 </head>
+<body data-page="contato">
+  <!-- ========== CABEÇALHO / MENU ========== -->
+  <header class="site-header solid" data-header>
+      <a href="index.html" class="brand" aria-label="Cursos Virtuais - Início">
+        <img src="img/design-logo-proporcao-aurea.png" alt="Logo Cursos Virtuais">
+        <span>Cursos <strong>Virtuais</strong></span>
+      </a>
 
-<body>
-    <nav id="menu-principal">
-    <img class="logo" src="/img/design-logo-proporcao-aurea.png" align="left">
-     <ul>
-        <li><a href="Site.index.html">Início</a></li>
-        <li><a href="sobrenos.html">Sobre Nós</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
-        <li><a href="contatos.html">Contatos</a></li>
-     </ul>
-    </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="contatos.pai1">
-        <div class="contatos">
-            <h4> Estamos prontos para lhe atender!</h4>
-            <p><i>Fale com a gente pelos contatos</i></p>
-            <h3>contato@gmail.com</h3>
-            <h3>(91) 9 9999-9999</h3>
+      <nav class="nav" id="menu-principal" data-nav>
+        <a href="index.html" data-page="inicio">Início</a>
+        <a href="sobrenos.html" data-page="sobre">Sobre nós</a>
+        <a href="equipe.html" data-page="equipe">Equipe</a>
+        <a href="contatos.html" data-page="contato">Contato</a>
+        <a class="nav-cta" href="index.html#cursos">Explorar cursos <span>↗</span></a>
+      </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero"><div class="contact-intro reveal"><span class="eyebrow">Entre em contato</span><h1>Vamos conversar?</h1><p>Esta página faz parte da apresentação do projeto de extensão. Use os canais abaixo como demonstração da experiência de contato do site.</p></div><div class="contact-orb reveal"><img src="img/contatos-site.png" alt="Ilustração de contato"></div></section>
+    <section class="contact-grid"><a class="contact-card reveal" href="mailto:cursosvirtuais@gmail.com"><span class="contact-label">E-mail</span><h2>cursosvirtuais@gmail.com</h2><span class="contact-arrow">↗</span></a><a class="contact-card reveal" href="tel:+5591999999999"><span class="contact-label">Telefone</span><h2>(91) 9 9999-9999</h2><span class="contact-arrow">↗</span></a></section>
+    <section class="section contact-message"><span class="eyebrow reveal">Cursos Virtuais</span><h2 class="reveal">Conhecimento fica melhor quando é compartilhado.</h2><a class="btn btn-dark reveal" href="index.html#cursos">Explorar cursos <span>→</span></a></section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="index.html">
+          <img src="img/design-logo-proporcao-aurea.png" alt="">
+          <span>Cursos <strong>Virtuais</strong></span>
+        </a>
+        <div class="footer-links">
+          <div><span>Navegue</span><a href="index.html">Início</a><a href="sobrenos.html">Sobre nós</a><a href="equipe.html">Equipe</a><a href="contatos.html">Contato</a></div>
+          <div><span>Cursos</span><a href="informatica-basica.html">Informática Básica</a><a href="pacote-office.html">Pacote Office</a><a href="ingles-avancado.html">Inglês Avançado</a><a href="design-grafico.html">Design Gráfico</a></div>
         </div>
-    </div>
-    
-
-   
-    <div class="texto-final">
-     
-        <p>
-            <b>Cursos a distância podem ser uma boa opção para os profissionais de tecnologia se manterem atualizados</b>, aprenderem habilidades novas e alavancarem suas carreiras. 
-        </p>
-    </div>
-
-    <div>
-        <footer class="rodape">
-        <p>
-            O Cursos Virtuais é uma empresa brasileira legalmente estabelecida e presta
-            serviços educacionais a distância e consultoria para empresas
-        </p>
-
-        <p>
-           <b>Desenvolvido por: Camylla, Paulo e Tarcio</b>
-        </p>
-        </footer>
-    </div>
-      
-    
+      </div>
+      <div class="footer-bottom"><p>Projeto de extensão acadêmica • Cursos Virtuais</p><p>Desenvolvido por Camylla, Paulo e Tarcio • <span data-year></span></p></div>
+    </footer>
 </body>
-
-</html>       
-             
+</html>
