@@ -1,151 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
-    <title> Cursos Virtuais </title>
-    <link rel="stylesheet" href="css/site.style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projeto de extensão com cursos gratuitos e acessíveis.">
+  <title>Cursos Virtuais | Aprenda no seu ritmo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="script.js" defer></script>
 </head>
+<body data-page="inicio">
+  <!-- ========== CABEÇALHO / MENU ========== -->
+  <header class="site-header" data-header>
+      <a href="index.html" class="brand" aria-label="Cursos Virtuais - Início">
+        <img src="img/design-logo-proporcao-aurea.png" alt="Logo Cursos Virtuais">
+        <span>Cursos <strong>Virtuais</strong></span>
+      </a>
 
-<body>
-    <nav id="menu-principal">
-    <img class="logo" src="/img/design-logo-proporcao-aurea.png" align="left">
-     <ul>
-         <li><a href="Site.index.html">Início</a></li>
-         <li><a href="sobrenos.html">Sobre Nós</a></li>
-         <li><a href="equipe.html">Equipe</a></li>
-         <li><a href="contatos.html">Contatos</a></li>
-     </ul>
-    </nav>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="container">
-        <header>
-            <div class="img-wrapper">
-                <img src="/img/fundo2.png" alt="">
-            </div>
-            <div class="banner">
-                <h1>APRENDA DE FORMA PRÁTICA</h1>
-                <p>Cursos rápidos e onlines | Não precisa sair de casa</p>
-                <a href="sobrenos.html"> <button>saiba mais</button></a>
-            </div>
-        </header>
-    </div>
+      <nav class="nav" id="menu-principal" data-nav>
+        <a href="index.html" data-page="inicio">Início</a>
+        <a href="sobrenos.html" data-page="sobre">Sobre nós</a>
+        <a href="equipe.html" data-page="equipe">Equipe</a>
+        <a href="contatos.html" data-page="contato">Contato</a>
+        <a class="nav-cta" href="index.html#cursos">Explorar cursos <span>↗</span></a>
+      </nav>
+  </header>
 
-    <div class="pai1">
-        <div class="titulo2">
-            <h3>Nossos cursos</h3>
-            <p>Conteúdos especializados sobre diversos temas</p>
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <img class="hero-bg" src="img/fundo2.png" alt="Pessoa estudando com tecnologia">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow light">Educação que cabe na sua rotina</span>
+        <h1>Conhecimento para ir <em>mais longe.</em></h1>
+        <p>Aprenda de forma simples, gratuita e no seu ritmo. Um projeto de extensão criado para aproximar pessoas de novas possibilidades.</p>
+        <div class="hero-actions"><a class="btn btn-light" href="#cursos">Conheça os cursos <span>→</span></a><a class="text-link light" href="sobrenos.html">Conheça o projeto <span>↗</span></a></div>
+      </div>
+      <a class="scroll-hint" href="#cursos"><span></span>Role para descobrir</a>
+    </section>
+
+    <!-- ========== CURSOS ========== -->
+    <section class="section intro" id="cursos">
+      <div class="section-heading reveal"><span class="eyebrow">Aprenda do seu jeito</span><h2>Um ponto de partida para novas habilidades.</h2><p>Conteúdos introdutórios e acessíveis para você aprender onde estiver, respeitando o seu tempo.</p></div>
+      <div class="course-grid">
+        <article class="course-card reveal"><div class="course-icon"><img src="img/curso1-icone.png" alt=""></div><span class="course-number">01</span><h3>Informática Básica</h3><p>Domine os fundamentos do computador, internet, arquivos e segurança digital.</p><a href="informatica-basica.html">Conhecer curso <span>↗</span></a></article>
+        <article class="course-card reveal"><div class="course-icon"><img src="img/curso2-icone.png" alt=""></div><span class="course-number">02</span><h3>Pacote Office</h3><p>Conheça Word, Excel e PowerPoint para estudar, organizar e produzir melhor.</p><a href="pacote-office.html">Conhecer curso <span>↗</span></a></article>
+        <article class="course-card reveal"><div class="course-icon"><img src="img/curso3-icone.png" alt=""></div><span class="course-number">03</span><h3>Inglês Avançado</h3><p>Pratique comunicação, vocabulário e compreensão para situações do cotidiano.</p><a href="ingles-avancado.html">Conhecer curso <span>↗</span></a></article>
+        <article class="course-card reveal"><div class="course-icon"><img src="img/curso4-icone.png" alt=""></div><span class="course-number">04</span><h3>Design Gráfico</h3><p>Explore fundamentos de composição, tipografia, cor e comunicação visual.</p><a href="design-grafico.html">Conhecer curso <span>↗</span></a></article>
+      </div>
+    </section>
+
+    <!-- ========== DESTAQUE 1 ========== -->
+    <section class="feature feature-gradient">
+      <div class="feature-copy reveal"><span class="eyebrow light">Comece do zero</span><h2>Aprender pode ser mais simples do que parece.</h2><p>A educação on-line aproxima conhecimento e oportunidade. Nossa proposta é oferecer um caminho acolhedor para quem quer começar, revisar ou descobrir algo novo.</p><a class="btn btn-light" href="sobrenos.html">Entenda o projeto <span>→</span></a></div>
+      <div class="feature-visual reveal"><div class="image-frame"><img src="img/img-descricao1.png" alt="Ilustração sobre aprendizagem"></div><span class="floating-note">100% on-line<br><strong>e gratuito</strong></span></div>
+    </section>
+
+    <!-- ========== DESTAQUE 2 ========== -->
+    <section class="feature feature-light reverse">
+      <div class="feature-copy reveal"><span class="eyebrow">No seu tempo</span><h2>Onde houver conexão, pode haver aprendizado.</h2><p>Organização e constância transformam pequenos momentos em evolução. Estude no seu ritmo e retome quando quiser.</p><a class="text-link" href="sobrenos.html">Descubra como funciona <span>↗</span></a></div>
+      <div class="feature-visual reveal"><div class="image-frame soft"><img src="img/img-descricao2.png" alt="Ilustração sobre educação a distância"></div></div>
+    </section>
+
+    <!-- ========== EQUIPE ========== -->
+    <section class="section team-preview">
+      <div class="section-heading reveal"><span class="eyebrow">Quem fez acontecer</span><h2>Um projeto criado por estudantes para aproximar pessoas do conhecimento.</h2></div>
+      <div class="team-grid">
+        <article class="person-card reveal"><div class="person-photo"><img src="img/camylla.png" alt="Camylla Wolfgram"></div><div><h3>Camylla Wolfgram</h3><p>Sistemas de Informação</p></div></article>
+        <article class="person-card reveal"><div class="person-photo"><img src="img/paulo.png" alt="Paulo Reinan"></div><div><h3>Paulo Reinan</h3><p>Sistemas de Informação</p></div></article>
+        <article class="person-card reveal"><div class="person-photo"><img src="img/tarcio.png" alt="Tarcio Ribeiro"></div><div><h3>Tarcio Ribeiro</h3><p>Sistemas de Informação</p></div></article>
+      </div>
+      <a class="btn btn-dark reveal" href="equipe.html">Conheça a equipe <span>→</span></a>
+    </section>
+
+    <!-- ========== CHAMADA FINAL ========== -->
+    <section class="cta-band reveal"><div><span class="eyebrow light">Vamos aprender?</span><h2>Seu próximo conhecimento pode começar agora.</h2></div><a class="circle-link" href="#cursos" aria-label="Ver cursos">↗</a></section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="index.html">
+          <img src="img/design-logo-proporcao-aurea.png" alt="">
+          <span>Cursos <strong>Virtuais</strong></span>
+        </a>
+        <div class="footer-links">
+          <div><span>Navegue</span><a href="index.html">Início</a><a href="sobrenos.html">Sobre nós</a><a href="equipe.html">Equipe</a><a href="contatos.html">Contato</a></div>
+          <div><span>Cursos</span><a href="informatica-basica.html">Informática Básica</a><a href="pacote-office.html">Pacote Office</a><a href="ingles-avancado.html">Inglês Avançado</a><a href="design-grafico.html">Design Gráfico</a></div>
         </div>
-    
-        <div class="cursos">
-            <div class="curso1">
-                <img src="/img/curso1-icone.png" alt="">
-                <h4>Informática Básica</h4>
-                <p>Amplie seus conhecimentos de informática com este curso completo.</p>
-            </div>
-    
-            <div class="curso2">
-                <img src="/img/curso2-icone.png" alt="">
-                <h4>Pacote Office</h4>
-                <p>Aprenda Word, Excel e Powerpoint com vídeoaulas.</p>
-            </div>
-    
-            <div class="curso3">
-                <img src="/img/curso3-icone.png" alt="">
-                <h4>Inglês Avançado</h4>
-                <p>Aprenda o básico do inglês com áudios neste curso completo.</p>
-            </div>
-    
-            <div class="curso4">
-                <img src="/img/curso4-icone.png" alt="">
-                <h4>Design Gráfico</h4>
-                <p>Saíba melhores formas de execução de uma comunicação visual.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="curso5">
-        <p><i> Cursos totalmente onlines e gratuitos. Aprender quando e onde quiser.</i></p>
-    </div>
-
-    <div class="pai2">
-        <div class="info1titulo">
-            <h3> Aprenda tudo do zero!</h3>
-            <div class="info1">
-                <img src="/img/img-descricao1.png" alt="">
-                <p> Os cursos online gratuitos com certificado são grandes diferenciais no mercado de trabalho
-                    visto que <font size= "5"> <b> a profissionalização é cada vez mais exigida para os empregos das mais diversas áreas.</b> </font>
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="pai3">
-        <div class="info2titulo">
-            <h4> Os cursos online e gratuitos com certificado crescem a cada dia.</h4>
-            <div class="info2">
-                <p>
-                    Para as pessoas que estão sem estudar,<font size= "5"> <b> são uma oportunidade de educação a distância (EAD)</b> </font> e também para quem é formado de potencializar o currículo.
-                </p>
-                <img src="/img/img-descricao2.png" alt="">
-            </div>
-        </div>
-    </div>
-
-    
-
-    <div class="titulo4">
-        <h3>Equipe de especialistas</h3>
-        <p>Conheça nossos professores</p>
-    </div>
-
-    <div class="equipe">
-        <div class="aluno1">
-            <img src="/img/camylla.png" alt="">
-            <h4>Camylla Wolfgram</h4>
-            <p></p>
-        </div>
-        <div class="aluno2">
-            <img src="/img/paulo.png" alt="">
-            <h4>Paulo Reinan</h4>
-            <p></p>
-        </div>
-        <div class="aluno3">
-            <img src="/img/tarcio.png" alt="">
-            <h4> Tarcio Ribeiro</h4>
-            <p></p>
-        </div>
-    </div>
-
-    <div class="texto-final">
-        <img src="/img/contatos-site.png" alt="">
-        <h3>
-            Fale com a gente pelos contatos
-        </h3>
-        <h4>
-            cursosvirtuais@gmail.com
-        </h4>
-        <h4>
-            (91) 9 9999-9999
-        </h4>
-    </div>
-
-    <div>
-        <footer class="rodape">
-        <p>
-            O Cursos Virtuais é uma empresa brasileira legalmente estabelecida e presta
-            serviços educacionais a distância e consultoria para empresas
-        </p>
-
-        <p>
-           <b>Desenvolvido por: Camylla, Paulo e Tarcio</b>
-        </p>
-        </footer>
-    </div>
-      
-    
+      </div>
+      <div class="footer-bottom"><p>Projeto de extensão acadêmica • Cursos Virtuais</p><p>Desenvolvido por Camylla, Paulo e Tarcio • <span data-year></span></p></div>
+    </footer>
 </body>
-
-</html>       
-             
+</html>
