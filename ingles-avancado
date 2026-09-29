@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página demonstrativa do curso Inglês Avançado.">
+  <title>Inglês Avançado | Cursos Virtuais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="curso">
+  <!-- ========== CABEÇALHO / MENU ========== -->
+  <header class="site-header" data-header>
+      <a href="index.html" class="brand" aria-label="Cursos Virtuais - Início">
+        <img src="img/design-logo-proporcao-aurea.png" alt="Logo Cursos Virtuais">
+        <span>Cursos <strong>Virtuais</strong></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" data-nav>
+        <a href="index.html" data-page="inicio">Início</a>
+        <a href="sobrenos.html" data-page="sobre">Sobre nós</a>
+        <a href="equipe.html" data-page="equipe">Equipe</a>
+        <a href="contatos.html" data-page="contato">Contato</a>
+        <a class="nav-cta" href="index.html#cursos">Explorar cursos <span>↗</span></a>
+      </nav>
+  </header>
+
+  <main>
+    <!-- ========== CAPA DO CURSO ========== -->
+    <section class="course-hero"><div class="course-hero-copy reveal"><a class="back-link" href="index.html#cursos">← Todos os cursos</a><span class="eyebrow light">Curso demonstrativo</span><h1>Inglês Avançado</h1><p>Amplie sua comunicação com o mundo.</p></div><div class="course-hero-icon reveal"><img src="img/curso3-icone.png" alt=""></div></section>
+    <!-- ========== SOBRE O CURSO ========== -->
+    <section class="section course-about"><div class="section-heading reveal"><span class="eyebrow">Visão geral</span><h2>Pratique vocabulário, compreensão e comunicação em inglês com situações que aproximam o idioma do cotidiano.</h2></div><div class="course-meta reveal"><div><strong>Formato</strong><span>On-line</span></div><div><strong>Nível</strong><span>Introdutório</span></div><div><strong>Acesso</strong><span>Gratuito</span></div></div></section>
+    <!-- ========== CONTEÚDO ========== -->
+    <section class="section lessons"><div class="section-heading reveal"><span class="eyebrow">Conteúdo</span><h2>O que você vai encontrar.</h2></div><div class="lesson-grid"><article class="lesson-card reveal"><span>01</span><h3>Vocabulário e expressões</h3><p>Conceitos essenciais apresentados de forma objetiva e visual.</p></article><article class="lesson-card reveal"><span>02</span><h3>Leitura e compreensão</h3><p>Conceitos essenciais apresentados de forma objetiva e visual.</p></article><article class="lesson-card reveal"><span>03</span><h3>Listening e pronúncia</h3><p>Conceitos essenciais apresentados de forma objetiva e visual.</p></article><article class="lesson-card reveal"><span>04</span><h3>Comunicação no cotidiano</h3><p>Conceitos essenciais apresentados de forma objetiva e visual.</p></article></div></section>
+    <!-- ========== CHAMADA ========== -->
+    <section class="course-callout reveal"><span class="eyebrow light">Para quem é</span><h2>Um espaço ilustrativo para exercitar o idioma e ampliar repertório de forma leve.</h2><a class="btn btn-light" href="index.html#cursos">Ver outros cursos <span>→</span></a></section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="index.html">
+          <img src="img/design-logo-proporcao-aurea.png" alt="">
+          <span>Cursos <strong>Virtuais</strong></span>
+        </a>
+        <div class="footer-links">
+          <div><span>Navegue</span><a href="index.html">Início</a><a href="sobrenos.html">Sobre nós</a><a href="equipe.html">Equipe</a><a href="contatos.html">Contato</a></div>
+          <div><span>Cursos</span><a href="informatica-basica.html">Informática Básica</a><a href="pacote-office.html">Pacote Office</a><a href="ingles-avancado.html">Inglês Avançado</a><a href="design-grafico.html">Design Gráfico</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>Projeto de extensão acadêmica • Cursos Virtuais</p><p>Desenvolvido por Camylla, Paulo e Tarcio • <span data-year></span></p></div>
+    </footer>
+</body>
+</html>
