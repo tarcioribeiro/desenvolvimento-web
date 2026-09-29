@@ -1,0 +1,19 @@
+# Variáveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Dependências (caso futuramente use Node.js)
+node_modules/
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.temp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações locais de editores
+.vscode/
